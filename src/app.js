@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import routerApi from './routes/app.routes.js';
 
 const app = express();
@@ -6,6 +7,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(cors());
 
 // Routes
 app.use('/send-mail', routerApi)
