@@ -2,6 +2,9 @@ import { Router } from "express";
 
 const router = Router();
 
-router.use('/mail-information', );
+router.post('/', (req, res) => {
+    console.log(req.body);
+    res.json(req.body)
+});
 
 export default router;
