@@ -11,6 +11,6 @@ app.use(cors());
 
 // Routes
 app.use('/send-mail', routerApi)
-app.use('/send-mail', (req, res) => res.send('<h1>Hola mundo</h1>'))
+app.use('/', (req, res) => res.send('<h1>Hola mundo</h1>'))
 
 export default app;
