@@ -58,7 +58,7 @@ router.post('/form-music', async (req, res) => {
 
     console.log('Message sent: ', info.messageId);
 
-    res.json({ redirect: 'https://milagros-xv.vercel.app/' });
+    res.redirect('https://milagros-xv.vercel.app/');
 });
 
 export default router;
