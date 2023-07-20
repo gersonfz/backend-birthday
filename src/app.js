@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import routerApi from './routes/app.routes.js';
+import routerMusic from './routes/music.routes.js';
 
 const app = express();
 
@@ -13,6 +14,5 @@ app.use(cors({
   
 // Routes
 app.use('/send-mail', routerApi)
-app.use('/', (req, res) => res.send('<h1>Hola mundo</h1>'))
-
+app.use('/send-music', routerMusic)
 export default app;
