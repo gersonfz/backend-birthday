@@ -1,6 +1,5 @@
 import { Router } from "express";
 import nodemailer from 'nodemailer';
-import { ENV_CONFIG_PROCESS } from "../config.js";
 
 
 const router = Router();
@@ -9,8 +8,8 @@ const transporter = nodemailer.createTransport({
     port: 587,
     secure: false,
     auth: {
-        user: ENV_CONFIG_PROCESS.USER,
-        pass: ENV_CONFIG_PROCESS.PASSWORD
+        user: process.env.USER,
+        pass: process.env.PASSWORD
     }
 });
 
