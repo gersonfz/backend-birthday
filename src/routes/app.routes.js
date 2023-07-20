@@ -34,7 +34,7 @@ router.post('/form-birthday', async (req, res) => {
 
         console.log('Message sent: ', info.messageId);
 
-        res.json({ redirect: 'http://localhost:5173/' });
+        res.json({ redirect: 'https://milagros-xv.vercel.app/' });
     });
 
 router.post('/form-music', async (req, res) => {
@@ -58,7 +58,7 @@ router.post('/form-music', async (req, res) => {
 
     console.log('Message sent: ', info.messageId);
 
-    res.json({ redirect: 'http://localhost:5173/' });
+    res.json({ redirect: 'https://milagros-xv.vercel.app/' });
 });
 
 export default router;
